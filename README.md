@@ -1,15 +1,25 @@
 # loseheartの博客
 
+[访问博客](https://loseheart-dev.github.io/) · [部署记录](https://github.com/loseheart-dev/loseheart-dev.github.io/actions/workflows/pages.yml)
+
+[![Deploy blog](https://github.com/loseheart-dev/loseheart-dev.github.io/actions/workflows/pages.yml/badge.svg)](https://github.com/loseheart-dev/loseheart-dev.github.io/actions/workflows/pages.yml)
+
 以 Hexo + Butterfly 搭建的个人博客，首页使用原创 AI 插画「碧潭」。支持文章阅读、目录、归档、标签、分类、本地全文搜索、深浅色、阅读模式和手机导航。
+
+已部署到 GitHub Pages。日常更新流程：新增或编辑 Markdown → 本地预览与检查 → 提交并推送到 `main` → 等待 `Deploy blog` 成功 → 查看公网结果。文章内容维护在 `source/`，无需网页后台。
 
 ## 本地运行
 
 在 macOS 项目目录使用 Node.js 24 或更高版本：
 
 ```bash
+git clone https://github.com/loseheart-dev/loseheart-dev.github.io.git
+cd loseheart-dev.github.io
 npm ci
 npm run dev
 ```
+
+已有本地项目时，进入原项目目录，从 `npm ci` 开始即可。
 
 打开 http://localhost:4173 。开发服务器仅监听本机。
 
@@ -108,11 +118,25 @@ npm run dev
 
 只编辑 `source/` 下的内容，`public/` 会在构建时重新生成。当前四篇开站短文用于展示阅读效果，可以替换或删除。没有复制参考站的文章、人物原照片或作者联系方式。
 
-### 保存到远程仓库
+### 提交并自动发布
 
 检查通过后，用 Git 提交修改过的文章和图片，再推送到远程仓库的 `main` 分支。GitHub Actions 会自动安装依赖、执行测试，并将生成的 `public/` 发布到 GitHub Pages。只有工作流部署成功后，公网内容才会更新。
 
-公网地址：https://loseheart-dev.github.io/ 。在仓库的 Actions 页面查看 `Deploy blog` 的运行结果；部署失败时打开失败步骤的日志，修复后重新推送。也可以通过 `Run workflow` 手动触发部署。
+例如，只新增上面的文章及配图时，在项目根目录执行：
+
+```bash
+npm test
+git status --short
+git add source/_posts/my-first-post.md
+# 有配图时，再添加实际使用的图片目录：
+# git add source/images/my-first-post/
+git commit -m "post: add my first article"
+git push origin main
+```
+
+示例路径须换成这次实际修改的文件；修改配置时也需要提交对应配置文件。提交前用 `git status --short` 核对范围。
+
+公网地址：[loseheartの博客](https://loseheart-dev.github.io/)。在[部署记录](https://github.com/loseheart-dev/loseheart-dev.github.io/actions/workflows/pages.yml)查看 `Deploy blog` 的运行结果；部署失败时打开失败步骤的日志，修复后重新推送。也可以通过 `Run workflow` 手动触发部署。
 
 部署配置为 `.github/workflows/pages.yml`，使用 Node.js 24 和 GitHub 自带令牌；Pages 的发布来源应选择 GitHub Actions。`public/` 无须提交，私人提示词和参考站研究资料继续只保留在本地。
 
@@ -120,11 +144,13 @@ npm run dev
 
 - `_config.yml`：站名、作者、描述、文章路径与公网地址。站名为 loseheartの博客，作者为 loseheart。
 - `_config.butterfly.yml`：菜单、头像、首页与内页背景、标语、侧栏、强调色和功能开关。
+- `source/images/avatar-loseheart.jpg`：作者头像，用于侧栏和手机导航。
 - `source/favicon-character-v2.ico`：浏览器标签页人物图标，包含 16／32／48／64／128／256px 尺寸；高清透明源图为 `source/images/loseheart-character-v2.png`。设计保留棕色盘发、翡翠绿衣服与侧背影。`source/favicon.ico` 是相同图标的默认路径副本。
 - `source/css/custom.css`：背景裁切、卡片、阅读字号和响应式细节。
 - `source/js/custom.js`：主题交互的键盘补充与减少动态效果适配。
 - `source/images/jade-pond.png`：站点使用的背景。原始生成图保留在 `assets/artwork/`；包含个人偏好的提示词仅保留在本地，不提交远程。此目录不进入生成站点。
 - `source/about/index.md`：关于页。
+- `scripts/page-title.js`：归档总览页的浏览器标签标题调整。
 
 主题及第三方脚本使用本地资源，不依赖外部 CDN。通过 npm 锁定依赖；个性化配置不修改 `node_modules`，更新主题不会覆盖自定义文件。
 
