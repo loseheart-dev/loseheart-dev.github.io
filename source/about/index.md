@@ -3,7 +3,7 @@ title: 关于
 comments: false
 ---
 
-## 你好，我是 Shihao
+## 你好，我是 loseheart
 
 这里放一些学习笔记、做东西的过程，以及不想忘记的小事。
 

@@ -10,9 +10,9 @@ menu:
     分类: /categories/ || fas fa-folder-open
   关于: /about/ || fas fa-feather-alt
 avatar:
-  img: /images/jade-pond.png
+  img: /images/avatar-loseheart.jpg
   effect: false
-favicon: /img/favicon.ico
+favicon: /favicon-character-v2.ico
 index_img: /images/jade-pond.png
 default_top_img: /images/jade-pond.png
 archive_img: /images/jade-pond.png
@@ -125,7 +125,7 @@ footer:
     enable: true
     since: 2026
   copyright:
-    enable: true
+    enable: false
     version: false
 font:
   global_font_size: 16px

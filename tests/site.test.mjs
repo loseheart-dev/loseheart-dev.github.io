@@ -12,7 +12,10 @@ test('build contains the blog routes, real counts, pagination and local search d
     assert.match(await read(route), /<title>[^<]+<\/title>/);
   }
   const index = await read('index.html');
-  assert.match(index, /loseheart的博客/);
+  assert.match(index, /loseheartの博客/);
+  assert.match(await read('archives/index.html'), /<title>loseheartの博客<\/title>/);
+  assert.match(index, /By loseheart/);
+  assert.doesNotMatch(index, /class="framework-info"/);
   assert.match(index, /\/images\/jade-pond.png/);
   assert.equal((index.match(/class="recent-post-item(?:\s|")/g) || []).length, 3);
   const search = await read('search.xml');

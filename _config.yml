@@ -1,12 +1,12 @@
-title: loseheart的博客
+title: loseheartの博客
 subtitle: 记一点技术，也记一点生活。
 description: 学习笔记、项目复盘与日常随记。
-author: Shihao
+author: loseheart
 language: zh-CN
 timezone: Asia/Shanghai
 
-# Replace with the public domain before deployment.
-url: http://localhost:4173
+url: https://loseheart-dev.github.io
+root: /
 permalink: posts/:title/
 pretty_urls:
   trailing_index: false
@@ -20,7 +20,7 @@ skip_render:
   - images/**
   - css/**
   - js/**
-  - favicon.ico
+  - favicon*.ico
   - vendor/**
 new_post_name: :title.md
 default_layout: post
