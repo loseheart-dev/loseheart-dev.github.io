@@ -46,4 +46,4 @@ npm run new -- "文章标题"
 
 2026-10-19 的 `npm audit` 报告 10 项构建工具依赖告警（8 high、2 moderate），来自 `braces` 和 `sprintf-js` 及其依赖链，当前查询到的最新版仍在受影响范围。未采用审计工具建议的跨大版本降级。只处理自己信任的 Markdown、模板与配置；开发服务器保持本机监听。这些 Node 构建依赖不作为脚本发送给读者浏览器。详见 `docs/verification/2026-10-19/dependency-audit.json`。
 
-`docs/立项.md` 为旧课程立项，已不再约束这次新博客。参考站拆解与截图在 `docs/博客逆向与个性化方案.md` 及 `docs/research/`，不进入公开站点。
+`docs/立项.md` 为旧课程立项，已不再约束这次新博客。参考站拆解与截图仅保留在本地 `docs/博客逆向与个性化方案.md` 及 `docs/research/`，不提交远程仓库，也不进入公开站点。
