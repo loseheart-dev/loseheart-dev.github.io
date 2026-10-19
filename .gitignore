@@ -1,0 +1,10 @@
+node_modules/
+public/
+db.json
+.DS_Store
+*.log
+.deploy_git/
+.cache/
+
+# Personal image-generation references and preferences stay local.
+assets/artwork/jade-pond-hero-v1.md

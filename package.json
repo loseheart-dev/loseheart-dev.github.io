@@ -1,0 +1,32 @@
+{
+  "name": "shihao-blog",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A personal blog built with Hexo and Butterfly.",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "dev": "hexo server --ip 127.0.0.1 --port 4173",
+    "build": "hexo generate",
+    "clean": "hexo clean",
+    "new": "hexo new",
+    "test": "npm run build && node --test tests/site.test.mjs"
+  },
+  "hexo": {
+    "version": "8.1.2"
+  },
+  "dependencies": {
+    "hexo": "8.1.2",
+    "hexo-generator-archive": "2.0.0",
+    "hexo-generator-category": "2.0.0",
+    "hexo-generator-index": "4.0.0",
+    "hexo-generator-searchdb": "1.5.0",
+    "hexo-generator-tag": "2.0.0",
+    "hexo-renderer-marked": "7.0.1",
+    "hexo-renderer-pug": "3.0.0",
+    "hexo-renderer-stylus": "3.0.1",
+    "hexo-server": "3.0.0",
+    "hexo-theme-butterfly": "5.7.0"
+  }
+}

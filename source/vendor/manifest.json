@@ -1,0 +1,34 @@
+[
+  {
+    "file": "fontawesome/css/all.min.css",
+    "sha256": "e0b69df26e19596d4b81bf7eb0c54b6047e7221ec18d5d4d40c11eefd3ef8a4b"
+  },
+  {
+    "file": "fontawesome/LICENSE.txt",
+    "sha256": "20c6f40715a567c97b80f6944beb8bb325835cab47ea7dcab89ee3b8e077eced"
+  },
+  {
+    "file": "fontawesome/webfonts/fa-solid-900.woff2",
+    "sha256": "24e5fae26b41c08b2df81c91669f5aaae71d81a84a4713fc56b5c621b78dd456"
+  },
+  {
+    "file": "fontawesome/webfonts/fa-regular-400.woff2",
+    "sha256": "f4722d10b9e1b41eefe3b51a026312ee1970edb7782f94b0080d3d475945734c"
+  },
+  {
+    "file": "fontawesome/webfonts/fa-brands-400.woff2",
+    "sha256": "ff66d1cfb67dbe3da432bbe36572cabfa4eef0e591303c2cba111474ba1d15bc"
+  },
+  {
+    "file": "fontawesome/webfonts/fa-v4compatibility.woff2",
+    "sha256": "c776ee1f1fe21cd72195e91de7afd5c9dbd007e9d06016254d65fbcc091398ca"
+  },
+  {
+    "file": "typed/typed.umd.js",
+    "sha256": "58424467abb3fa4b302a80c7108fe20ca8328e4ecb4275cf1a04db3fa5f83f27"
+  },
+  {
+    "file": "typed/LICENSE",
+    "sha256": "62c41c02a4408e7765761e3f8b34e6c8a2af0ae7d455a17ebdce09367c344eb2"
+  }
+]

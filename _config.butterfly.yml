@@ -1,0 +1,171 @@
+nav:
+  display_title: true
+  display_post_title: true
+  fixed: true
+menu:
+  首页: / || fas fa-home
+  文章||fas fa-book-open:
+    归档: /archives/ || fas fa-archive
+    标签: /tags/ || fas fa-tags
+    分类: /categories/ || fas fa-folder-open
+  关于: /about/ || fas fa-feather-alt
+avatar:
+  img: /images/jade-pond.png
+  effect: false
+favicon: /img/favicon.ico
+index_img: /images/jade-pond.png
+default_top_img: /images/jade-pond.png
+archive_img: /images/jade-pond.png
+tag_img: /images/jade-pond.png
+category_img: /images/jade-pond.png
+footer_img: false
+cover:
+  index_enable: false
+  aside_enable: false
+  archives_enable: false
+subtitle:
+  enable: true
+  effect: true
+  source: false
+  typed_option:
+    startDelay: 400
+    typeSpeed: 110
+    backSpeed: 45
+    backDelay: 2400
+  sub:
+    - 记一点技术，也记一点生活。
+    - 慢慢走，认真看。
+index_layout: 3
+index_post_content:
+  method: 2
+  length: 160
+post_meta:
+  page:
+    date_type: created
+    date_format: date
+    categories: true
+    tags: false
+    label: true
+toc:
+  post: true
+  page: false
+  number: true
+  expand: false
+  scroll_percent: true
+code_blocks:
+  theme: light
+  copy: true
+  language: true
+  shrink: false
+post_copyright:
+  enable: false
+related_post:
+  enable: false
+aside:
+  enable: true
+  hide: false
+  button: true
+  mobile: true
+  position: right
+  card_author:
+    enable: true
+    description: 记录、折腾，也留一点时间给生活。
+    button:
+      enable: true
+      icon: fas fa-feather-alt
+      text: 关于我
+      link: /about/
+  card_announcement:
+    enable: true
+    content: 慢慢更新，认真记录。欢迎在这里停留一会儿。
+  card_recent_post:
+    enable: true
+    limit: 4
+  card_categories:
+    enable: true
+  card_tags:
+    enable: true
+    limit: 12
+    color: false
+    orderby: name
+  card_archives:
+    enable: true
+    limit: 4
+    format: YYYY 年 MM 月
+  card_webinfo:
+    enable: false
+readmode: true
+darkmode:
+  enable: true
+  button: true
+  autoChangeMode: false
+rightside_item_order:
+  enable: true
+  hide: readmode
+  show: darkmode,hideAside,toc
+anchor:
+  auto_update: false
+  click_to_scroll: true
+busuanzi:
+  site_uv: false
+  site_pv: false
+  page_pv: false
+search:
+  use: local_search
+  placeholder: 搜索文章
+  local_search:
+    preload: false
+    top_n_per_article: 1
+share:
+  use:
+comments:
+  use:
+footer:
+  owner:
+    enable: true
+    since: 2026
+  copyright:
+    enable: true
+    version: false
+font:
+  global_font_size: 16px
+  code_font_size: 14px
+  font_family: '-apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif'
+  code_font_family: '"SFMono-Regular", Consolas, "Liberation Mono", monospace'
+theme_color:
+  enable: true
+  main: '#287c61'
+  paginator: '#287c61'
+  button_hover: '#205f4c'
+  text_selection: '#cde6da'
+  link_color: '#287c61'
+  meta_color: '#767d78'
+  hr_color: '#d8e6de'
+  code_foreground: '#22664f'
+  code_background: 'rgba(40, 124, 97, .06)'
+  toc_color: '#287c61'
+  blockquote_padding_color: '#287c61'
+  blockquote_background_color: '#f1f7f3'
+  scrollbar_color: '#61927e'
+  meta_theme_color_light: '#f7f9f6'
+  meta_theme_color_dark: '#111b17'
+hr_icon:
+  enable: false
+enter_transitions: false
+pjax:
+  enable: false
+lazyload:
+  enable: true
+  native: true
+CDN:
+  internal_provider: local
+  third_party_provider: local
+  version: true
+  option:
+    fontawesome: /vendor/fontawesome/css/all.min.css
+    typed: /vendor/typed/typed.umd.js
+inject:
+  head:
+    - '<link rel="stylesheet" href="/css/custom.css">'
+  bottom:
+    - '<script src="/js/custom.js" defer></script>'
