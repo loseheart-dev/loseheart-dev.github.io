@@ -1,0 +1,79 @@
+
+> shihao-blog@1.0.0 test
+> npm run build && node --test tests/site.test.mjs
+
+
+> shihao-blog@1.0.0 build
+> hexo generate
+
+INFO  Validating config
+INFO  
+  ===================================================================
+      #####  #    # ##### ##### ###### #####  ###### #      #   #
+      #    # #    #   #     #   #      #    # #      #       # #
+      #####  #    #   #     #   #####  #    # #####  #        #
+      #    # #    #   #     #   #      #####  #      #        #
+      #    # #    #   #     #   #      #   #  #      #        #
+      #####   ####    #     #   ###### #    # #      ######   #
+                            5.7.0
+  ===================================================================
+INFO  Start processing
+INFO  Files loaded in 1.96 s
+INFO  Generated: search.xml
+INFO  Generated: categories/index.html
+INFO  Generated: tags/index.html
+INFO  Generated: archives/index.html
+INFO  Generated: categories/技术笔记/index.html
+INFO  Generated: categories/做站记录/index.html
+INFO  Generated: about/index.html
+INFO  Generated: tags/CSS/index.html
+INFO  Generated: categories/日常随记/index.html
+INFO  Generated: archives/2026/index.html
+INFO  Generated: tags/前端/index.html
+INFO  Generated: tags/阅读体验/index.html
+INFO  Generated: tags/随记/index.html
+INFO  Generated: index.html
+INFO  Generated: js/custom.js
+INFO  Generated: vendor/README.md
+INFO  Generated: css/custom.css
+INFO  Generated: tags/设计/index.html
+INFO  Generated: img/favicon.ico
+INFO  Generated: vendor/typed/LICENSE
+INFO  Generated: posts/jade-pond/index.html
+INFO  Generated: vendor/fontawesome/LICENSE.txt
+INFO  Generated: vendor/fontawesome/webfonts/fa-regular-400.woff2
+INFO  Generated: page/2/index.html
+INFO  Generated: vendor/fontawesome/css/all.min.css
+INFO  Generated: img/404.jpg
+INFO  Generated: posts/css-grid-notes/index.html
+INFO  Generated: img/friend_404.gif
+INFO  Generated: img/error-page.png
+INFO  Generated: vendor/manifest.json
+INFO  Generated: archives/2026/10/index.html
+INFO  Generated: posts/reading-on-the-web/index.html
+INFO  Generated: js/search/local-search.js
+INFO  Generated: vendor/fontawesome/webfonts/fa-v4compatibility.woff2
+INFO  Generated: vendor/fontawesome/webfonts/fa-brands-400.woff2
+INFO  Generated: posts/hello-blog/index.html
+INFO  Generated: css/var.css
+INFO  Generated: js/tw_cn.js
+INFO  Generated: js/utils.js
+INFO  Generated: js/main.js
+INFO  Generated: js/search/algolia.js
+INFO  Generated: vendor/fontawesome/webfonts/fa-solid-900.woff2
+INFO  Generated: css/index.css
+INFO  Generated: vendor/typed/typed.umd.js
+INFO  Generated: img/butterfly-icon.png
+INFO  Generated: images/jade-pond.png
+INFO  46 files generated in 508 ms
+✔ build contains the blog routes, real counts, pagination and local search data (4.604917ms)
+✔ every generated local page, image, stylesheet and script reference resolves (43.26975ms)
+✔ local icon fonts and library licenses are included in the generated site (3.263708ms)
+ℹ tests 3
+ℹ suites 0
+ℹ pass 3
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 115.038083
