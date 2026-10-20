@@ -148,6 +148,7 @@ git push origin main
 - `source/favicon-character-v2.ico`：浏览器标签页人物图标，包含 16／32／48／64／128／256px 尺寸；高清透明源图为 `source/images/loseheart-character-v2.png`。设计保留棕色盘发、翡翠绿衣服与侧背影。`source/favicon.ico` 是相同图标的默认路径副本。
 - `source/css/custom.css`：背景裁切、卡片、阅读字号和响应式细节。
 - `source/js/custom.js`：主题交互的键盘补充与减少动态效果适配。
+- `source/images/jade-figure-minimal-v1.webp`：文章卡片后方的全站背景「留白人物」，使用 WebP；原图保留在 `assets/artwork/jade-figure-minimal-v1.png`。深色模式有遮罩，阅读模式会隐藏背景。
 - `source/images/jade-pond.png`：站点使用的背景。原始生成图保留在 `assets/artwork/`；包含个人偏好的提示词仅保留在本地，不提交远程。此目录不进入生成站点。
 - `source/about/index.md`：关于页。
 - `scripts/page-title.js`：归档总览页的浏览器标签标题调整。

@@ -19,6 +19,7 @@ archive_img: /images/jade-pond.png
 tag_img: /images/jade-pond.png
 category_img: /images/jade-pond.png
 footer_img: false
+background: /images/jade-figure-minimal-v1.webp
 cover:
   index_enable: false
   aside_enable: false
