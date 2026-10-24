@@ -149,7 +149,7 @@ git push origin main
 - `source/css/custom.css`：背景裁切、卡片、阅读字号和响应式细节。
 - `source/js/custom.js`：主题交互的键盘补充与减少动态效果适配。
 - `source/images/jade-figure-minimal-v1.webp`：文章卡片后方的全站背景「留白人物」，使用 WebP；原图保留在 `assets/artwork/jade-figure-minimal-v1.png`。深色模式有遮罩，阅读模式会隐藏背景。
-- `source/images/jade-pond.png`：站点使用的背景。原始生成图保留在 `assets/artwork/`；包含个人偏好的提示词仅保留在本地，不提交远程。此目录不进入生成站点。
+- `source/images/jade-pond-v1.webp`：首页及内页顶部背景，保留 1672×941 尺寸，约 323 KB；在页面头部预加载。`source/images/jade-pond.png` 保留为压缩源图，修改图片后请更换版本文件名及配置中的引用。可用 `cwebp -q 82 -m 6 source/images/jade-pond.png -o source/images/jade-pond-v1.webp` 重新生成。原始生成图保留在 `assets/artwork/`；包含个人偏好的提示词仅保留在本地，不提交远程。此目录不进入生成站点。
 - `source/about/index.md`：关于页。
 - `scripts/page-title.js`：归档总览页的浏览器标签标题调整。
 

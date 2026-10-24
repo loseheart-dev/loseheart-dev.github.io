@@ -13,11 +13,11 @@ avatar:
   img: /images/avatar-loseheart.jpg
   effect: false
 favicon: /favicon-character-v2.ico
-index_img: /images/jade-pond.png
-default_top_img: /images/jade-pond.png
-archive_img: /images/jade-pond.png
-tag_img: /images/jade-pond.png
-category_img: /images/jade-pond.png
+index_img: /images/jade-pond-v1.webp
+default_top_img: /images/jade-pond-v1.webp
+archive_img: /images/jade-pond-v1.webp
+tag_img: /images/jade-pond-v1.webp
+category_img: /images/jade-pond-v1.webp
 footer_img: false
 background: /images/jade-figure-minimal-v1.webp
 cover:
@@ -167,6 +167,7 @@ CDN:
     typed: /vendor/typed/typed.umd.js
 inject:
   head:
+    - '<link rel="preload" as="image" href="/images/jade-pond-v1.webp" type="image/webp" fetchpriority="high">'
     - '<link rel="stylesheet" href="/css/custom.css">'
   bottom:
     - '<script src="/js/custom.js" defer></script>'

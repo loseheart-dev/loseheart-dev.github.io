@@ -16,11 +16,24 @@ test('build contains the blog routes, real counts, pagination and local search d
   assert.match(await read('archives/index.html'), /<title>loseheartの博客<\/title>/);
   assert.match(index, /By loseheart/);
   assert.doesNotMatch(index, /class="framework-info"/);
-  assert.match(index, /\/images\/jade-pond.png/);
+  assert.match(index, /\/images\/jade-pond-v1\.webp/);
   assert.equal((index.match(/class="recent-post-item(?:\s|")/g) || []).length, 3);
   const search = await read('search.xml');
   assert.ok((search.match(/<entry>/g) || []).length >= 4);
   assert.match(search, /CSS Grid/);
+});
+
+test('header background is compressed and preloaded before the page body', async () => {
+  const image = '/images/jade-pond-v1.webp';
+  const pages = (await readdir(root, { recursive: true })).filter(name => name.endsWith('.html'));
+  for (const page of pages) {
+    const html = await read(page);
+    const head = html.slice(0, html.indexOf('</head>'));
+    assert.match(head, /<link rel="preload" as="image" href="\/images\/jade-pond-v1\.webp" type="image\/webp" fetchpriority="high">/);
+    assert.ok(html.includes(`background-image: url(${image})`), `${page}: missing header background`);
+    assert.ok(!html.includes('/images/jade-pond.png'), `${page}: still loads original PNG`);
+  }
+  assert.ok((await stat(path.join(root, image))).size < 350_000);
 });
 
 test('every generated local page, image, stylesheet and script reference resolves', async () => {
